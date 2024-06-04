@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Aircraft</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .background {
+            width: 100%;
+            position: relative;
+        }
+        .background img {
+            width: 100%;
+            height: auto;
+        }
+        .form {
+            width: 80%;
+            max-width: 600px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .pd {
+            width: auto;
+            margin-right: 10px;
+        }
+        .length {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+        .div {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+        .leave{
+            width: 100%;
+            height: 12px;
+            background-color: aqua;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            bottom: -150px;
+            padding: 10px;
+                
+        }
+        .box {
+            width: 30%;
+            max-width: 200px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin: 5px;
+            flex: 1 1 30%;
+        }
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .box:hover {
+            transform: scale(1.1);
+            transition: all 0.2s linear;
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .form {
+                top: 100px;
+            
+            }
+            .box {
+                width: 45%;
+            }
+       
+        }
+
+        @media (max-width: 480px) {
+            .form {
+                top: 50px;
+                width: 90%;
+            }
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="https://platoon-website-files.s3.eu-central-1.amazonaws.com/jets-closing.jpg" alt="">
+
+        <!-- this div is only for dark layer on webpage -->
+        <div class="div"></div>
+        <!-- div end here -->
+
+        <div class="form">
+            <h1>Your Flight Planner</h1> <br><br>
+            <form action="">
+                <input type="radio" class="pd" id="i" name="r">
+                <label for="i">Round-Trip</label>
+                <input type="radio" class="pd" id="m" name="r">
+                <label for="m">One-Way</label> <br>
+                <input type="radio" class="pd" id="n" name="r">
+                <label for="n">Empty-Leg</label>
+                <input type="radio" class="pd" id="j" name="r">
+                <label for="j">Multi-Leg</label> <br> <br>
+
+                <label for="">Leaving From</label> <br>
+                <input type="text" placeholder="Enter City or Airport Code" class="length" id="leaveCity"> 
+                <span id="leave"></span> <br>
+
+                <label for="">Going To</label> <br>
+                <input type="text" placeholder="Enter City or Airport Code" class="length" id="goingTO">
+                <span id="going"> </span> <br>
+                <label for="">Deptaure Date And Time </label> <br>
+                <input type="date" class="length depdate"> <input type="time" class="length depdate" > 
+                <span id="deptaure"></span> <br>
+
+                <label for="">Return Date And Time </label> <br>
+                <input type="date" class="length returnDate"> <input type="time" class="length returnDate"> 
+                <span id="ret"></span> <br>
+
+                <label for="">Passengers</label> <br>
+                <input type="number" class="length" id="passNo"> 
+                <span id="pass"></span> <br>
+
+                <button class="btn" onclick="sub()">Submit</button>
+            </form>
+        </div> <!-- form div end here -->
+
+        
+        </div> <!-- main end here -->
+        
+    </div> <!-- background div end here -->
+    <div class="main">
+        <div class="box"> 
+            <h2>HOME</h2>
+            <a href="home.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895681.jpg?t=st=1699532152~exp=1699535752~hmac=22ea60161fceeab31cc2ae276f33f84c6734b2fcfe37ab62c8101121ff117ebc&w=1060" alt="">
+            </a>
+        </div><!--box end here -->
+        <div class="box">
+            <h2> AirCraft</h2>
+            <a href="aircraft.html">
+                <img src="https://img.freepik.com/free-photo/luxury-design-private-jet-flying-clouds-ai-generated-image_511042-1764.jpg?t=st=1699524617~exp=1699528217~hmac=e093e06756b7c79593a456b9dec1168eddb9884695a59cea7e60052f0a37eb43&w=1060" alt="">
+            </a>
+        </div> <!-- box end here -->
+        <div class="box">
+            <h2>  Safety</h2>
+            <a href="safety.html">
+                <img src="https://img.freepik.com/free-photo/plane-takes-off-mountains-generative-ai_169016-29359.jpg?w=1060&t=st=1699532217~exp=1699532817~hmac=449c947b1c41fab7814ca6c8e53e3ebf3f712df2d523bd3269d8ad47c11762d0" alt="">
+            </a>
+        </div><!-- box end here -->
+        <div class="box">
+            <h2>Charters</h2>
+            <a href="charaters.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895697.jpg?t=st=1699532244~exp=1699535844~hmac=4d6879eb634f413f56e205f16be6465565b77ecb0c5b577ac06953bee344ddae&w=1060" alt="">
+            </a>
+        </div><!-- box end here -->
+        <div class="box">
+            <h2>Contact Us</h2>
+            <a href="contactus.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895699.jpg?t=st=1699524084~exp=1699527684~hmac=31cb4b4bffda2390fe9755f8df840fd54e201cc7a995f6e6be3560cf605421d1&w=1060" alt="">
+            </a>
+        </div><!-- box end here -->
+        
+        <script src="air.js"></script>
+
+        
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #a9c6f580;
+        }
+        .header {
+            width: 100%;
+            height: 350px;
+            position: relative;
+        }
+        .header img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: rgba(0,0,0,0.2);
+        }
+        .data {
+            position: absolute;
+            top: 80px;
+            left: 90px;
+            font-size: 70px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .data2 {
+            position: absolute;
+            top: 225px;
+            left: 350px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .middle {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 90px;
+            flex-wrap: wrap;
+        }
+        .left, .right {
+            width: 48%;
+        }
+        .left {
+            background-color: #3b82f680;
+            color: white;
+            padding: 80px;
+        }
+        .right {
+            padding: 80px;
+            background-color: white;
+        }
+        .upper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .first, .last {
+            width: 48%;
+        }
+        .first input, .last input, .email input, .phone input, .text textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            padding: 8px 15px;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 10%;
+            padding-left: 10px;
+        }
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .box:hover {
+            transform: scale(1.2);
+            transition: all 0.1s linear;
+            color: red;
+        }
+        @media (max-width: 1200px) {
+            .data {
+                font-size: 50px;
+                left: 50px;
+            }
+            .data2 {
+                top: 180px;
+                left: 300px;
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 992px) {
+            .data {
+                font-size: 40px;
+                top: 60px;
+                left: 30px;
+            }
+            .data2 {
+                top: 160px;
+                left: 250px;
+                font-size: 16px;
+            }
+            .middle {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left, .right {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 768px) {
+            .data {
+                font-size: 30px;
+                top: 50px;
+                left: 20px;
+            }
+            .data2 {
+                top: 140px;
+                left: 200px;
+                font-size: 14px;
+            }
+            .left, .right {
+                width: 90%;
+                padding: 40px;
+            }
+        }
+        @media (max-width: 576px) {
+            .data {
+                font-size: 25px;
+                top: 40px;
+                left: 10px;
+            }
+            .data2 {
+                top: 120px;
+                left: 150px;
+                font-size: 12px;
+            }
+            .left, .right {
+                width: 100%;
+                padding: 20px;
+            }
+            .box {
+                width: 20%;
+                padding: 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            .data {
+                font-size: 20px;
+                top: 30px;
+                left: 5px;
+            }
+            .data2 {
+                top: 100px;
+                left: 100px;
+                font-size: 10px;
+            }
+            .left, .right {
+                padding: 10px;
+            }
+            .box {
+                width: 30%;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="overlay"></div>
+        <img src="https://www.blueriveraviation.com/wp-content/uploads/2023/05/BlueRiver_Oct22_75-1024x482.webp" alt="">
+        
+        <div class="data">
+            <h1>CONTACT US </h1>
+            <hr width="250px">
+        </div><!-- data end here -->
+        
+        <div class="data2"> 
+            <h2>GET IN TOUCH WITH OUR TEAM FOR ANY KIND OF HELP</h2>
+        </div><!-- data2 end here -->
+    </div><!-- header end here -->
+
+    <div class="middle">
+        <div class="left">
+            <h1>AIRLINE</h1> <br>
+            <h2>(907)414-3177</h2> <br>
+            <h2>fly@airlinegmail.com</h2> <br>
+            <h2>721 E YUKON ST, PALMAR ,AK 99036</h2>
+        </div><!-- left end here -->
+        <div class="right">
+            <div class="upper">
+                <div class="first">
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="last">
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div><!-- upper end here this div is for first name and last name -->
+            <div class="email">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="phone">
+                <input type="text" placeholder="Contact No.">
+            </div>
+            <div class="text">
+                <textarea cols="30" rows="10" placeholder="Have a question? Ask us"></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </div><!-- right end here -->
+    </div><!-- middle end here -->
+
+    <div class="main">
+        <div class="box">
+            <h2>Home</h2>
+            <a href="home.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895681.jpg?t=st=1699532152~exp=1699535752~hmac=22ea60161fceeab31cc2ae276f33f84c6734b2fcfe37ab62c8101121ff117ebc&w=1060" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <h2>Aircraft</h2>
+            <a href="aircraft.html">
+                <img src="https://img.freepik.com/free-photo/luxury-design-private-jet-flying-clouds-ai-generated-image_511042-1764.jpg?t=st=1699524617~exp=1699528217~hmac=e093e06756b7c79593a456b9dec1168eddb9884695a59cea7e60052f0a37eb43&w=1060" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <h2>Safety</h2>
+            <a href="safety.html">
+                <img src="https://img.freepik.com/free-photo/plane-takes-off-mountains-generative-ai_169016-29359.jpg?w=1060&t=st=1699532217~exp=1699532817~hmac=449c947b1c41fab7814ca6c8e53e3ebf3f712df2d523bd3269d8ad47c11762d0" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <h2>Charters</h2>
+            <a href="charaters.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895697.jpg?t=st=1699532244~exp=1699535844~hmac=4d6879eb634f413f56e205f16be6465565b77ecb0c5b577ac06953bee344ddae&w=1060" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <h2>Contact Us</h2>
+            <a href="contactus.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895699.jpg?t=st=1699524084~exp=1699527684~hmac=31cb4b4bffda2390fe9755f8df840fd54e201cc7a995f6e6be3560cf605421d1&w=1060" alt="">
+            </a>
+        </div>
+    </div><!-- main div end here -->
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .background {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        .background img {
+            height: inherit;
+            width: 100%;
+            object-fit: cover;
+        }
+        .data {
+            position: absolute;
+            top: 200px;
+            right: 80px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+            width: 40%;
+            font-size: 20px;
+            line-height: 25px;
+            color: white;
+        }
+        .top {
+            margin-bottom: 20px;
+        }
+        .middle {
+            margin-bottom: 25px;
+        }
+        .bottom {
+            margin-bottom: 10px;
+            line-height: 25px;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+        }
+        .box {
+            width: 10%;
+            text-align: center;
+            padding-right: 10px;
+        }
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .box:hover {
+            transform: scale(1.2);
+            transition: all 0.1s linear;
+            color: red;
+        }
+        @media (max-width: 1200px) {
+            .data {
+                width: 50%;
+                right: 50px;
+            }
+            .box {
+                width: 15%;
+            }
+        }
+        @media (max-width: 992px) {
+            .data {
+                width: 60%;
+                right: 30px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .box {
+                width: 20%;
+            }
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="https://images.unsplash.com/photo-1517999349371-c43520457b23?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <div class="data">
+            <div class="top">
+                <p>SAFETY AND WELLBEING</p>
+            </div>
+            <div class="middle">
+                <h1>Your Safety is our top priority</h1>
+            </div>
+            <div class="bottom">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ratione debitis magni ad tempore, error non aspernatur vero maxime porro deserunt perspiciatis reiciendis, illum cumque, eius ex ducimus possimus rerum facilis. Illum itaque in tempora laborum fugit quisquam ipsam rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, officiis!</p>
+            </div>
+        </div> <!-- data end here -->
+
+        <div class="main">
+            <div class="box">
+                <h2>HOME</h2>
+                <a href="home.html">
+                    <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895681.jpg?t=st=1699532152~exp=1699535752~hmac=22ea60161fceeab31cc2ae276f33f84c6734b2fcfe37ab62c8101121ff117ebc&w=1060" alt="">
+                </a>
+            </div><!--box end here -->
+            <div class="box">
+                <h2>AirCraft</h2>
+                <a href="aircraft.html">
+                    <img src="https://img.freepik.com/free-photo/luxury-design-private-jet-flying-clouds-ai-generated-image_511042-1764.jpg?t=st=1699524617~exp=1699528217~hmac=e093e06756b7c79593a456b9dec1168eddb9884695a59cea7e60052f0a37eb43&w=1060" alt="">
+                </a>
+            </div> <!-- box end here -->
+            <div class="box">
+                <h2>Safety</h2>
+                <a href="safety.html">
+                    <img src="https://img.freepik.com/free-photo/plane-takes-off-mountains-generative-ai_169016-29359.jpg?w=1060&t=st=1699532217~exp=1699532817~hmac=449c947b1c41fab7814ca6c8e53e3ebf3f712df2d523bd3269d8ad47c11762d0" alt="">
+                </a>
+            </div><!-- box end here -->
+            <div class="box">
+                <h2>Charters</h2>
+                <a href="charaters.html">
+                    <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895697.jpg?t=st=1699532244~exp=1699535844~hmac=4d6879eb634f413f56e205f16be6465565b77ecb0c5b577ac06953bee344ddae&w=1060" alt="">
+                </a>
+            </div><!-- box end here -->
+            <div class="box">
+                <h2>Contact Us</h2>
+                <a href="contactus.html">
+                    <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895699.jpg?t=st=1699524084~exp=1699527684~hmac=31cb4b4bffda2390fe9755f8df840fd54e201cc7a995f6e6be3560cf605421d1&w=1060" alt="">
+                </a>
+            </div><!--

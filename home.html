@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .ForVedio{
+            width: 100%;
+            position: relative;
+            
+            
+        }
+        .ForVedio video{
+            height: inherit;
+            width: 100%;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            position:absolute;
+            top: 0;
+            background: rgba(0,0,0,0.5);
+            
+        }
+        .gif{
+            width: 50%;
+            height: 300px;
+            /* margin: 0% auto; */
+            margin-left: -50%;
+        }
+        .gif img{
+            width: 100%;
+            height: inherit;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 2%;
+            
+        }
+        .box{
+            width: 10%;
+            padding: 0px 10px;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            
+        }
+        .box img{
+            border-radius: 10px;
+            width: 100%;
+            height: inherit;
+            position: relative;
+            
+           
+           
+        }
+        .box:hover{
+           transform: scale(1.2);
+            transition: all 0.1s linear;
+            color: red;
+            
+
+        }
+        /* .text{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+           width: fit-content;
+            z-index: 2;
+            margin: 0 auto;
+            transform: translate(50%);
+
+        } */
+        .data{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 45%;
+            margin: 0 auto;
+            width: 45%;
+            text-align: center;
+            color: white;
+            /* transform: translateY(50%); */
+            
+        }
+       .data h1{
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       .data p{
+        font-size: 18px;
+        line-height: 22px;
+       }
+     
+       .plane{
+        font-size: 30px;
+        color: #fafcff;
+         /* z-index: 2; */
+         position: absolute;
+         top:30px;
+         left: 30px;
+         animation-name: rotate;
+         animation-duration: 1s;
+         animation-timing-function: linear;
+         animation-iteration-count: 2;
+       }
+
+       @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+       }
+
+       @media screen and (max-width: 1100px) {
+    .main {
+        
+        flex-direction: column;
+        align-items: center;
+        bottom: 10%;
+        position: absolute;
+        bottom: -135%;
+        
+        
+    }
+    .box {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .data {
+        width: 70%;
+    }
+    .data h1 {
+        font-size: 36px;
+    }
+    .data p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .main {
+        position: absolute;
+        bottom: -135%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .data {
+        width: 90%;
+    }
+    .data h1 {
+        font-size: 28px;
+    }
+    .data p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+  
+    .main {
+        position: absolute;
+        bottom: -135%;
+    }
+    .box {
+        width: 80%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="ForVedio" >
+        
+        <div class="overlay">
+            <!-- <div> <i class="fa-solid fa-plane plane"></i></div> -->
+           
+            <div class="data" data-aos="fade-down">
+                <h1 >Welcome to Our Website</h1>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas totam repudiandae quod earum fugit, vel, ipsa ab perferendis error suscipit culpa sit voluptatem. Fugiat animi vero atque eligendi sapiente quam soluta similique perspiciatis doloremque eos nulla architecto, non nostrum!</p>
+            </div>
+        </div> <!--overlay div end here -->
+        
+        <Video autoplay loop muted>
+        <source src="mainVedio.mp4" type="Video/mp4">
+        </Video>
+        <div class="main">
+            <div class="box">
+                <h2 class="text" data-aos="zoom-in-right" data-aos-duration="2400">Home</h2>
+
+                <a href="home.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895681.jpg?t=st=1699532152~exp=1699535752~hmac=22ea60161fceeab31cc2ae276f33f84c6734b2fcfe37ab62c8101121ff117ebc&w=1060" alt=""data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
+                </a>
+            </div>
+            <div class="box">
+                <h2 class="text" data-aos="zoom-in-right" data-aos-duration="2400"> AirCraft</h2>
+
+                <a href="aircraft.html">
+                <img src="https://img.freepik.com/free-photo/luxury-design-private-jet-flying-clouds-ai-generated-image_511042-1764.jpg?t=st=1699524617~exp=1699528217~hmac=e093e06756b7c79593a456b9dec1168eddb9884695a59cea7e60052f0a37eb43&w=1060" alt=""data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1700">
+                </a>
+            </div>
+            <div class="box">
+                <h2 class="text" data-aos="zoom-in-right" data-aos-duration="2400">  Safety</h2>
+
+                <a href="safety.html">
+                <img src="https://img.freepik.com/free-photo/plane-takes-off-mountains-generative-ai_169016-29359.jpg?w=1060&t=st=1699532217~exp=1699532817~hmac=449c947b1c41fab7814ca6c8e53e3ebf3f712df2d523bd3269d8ad47c11762d0" alt=""data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1900">
+                </a>
+            </div>
+            <div class="box">
+                <h2 class="text" data-aos="zoom-in-right" data-aos-duration="2400">Charters</h2>
+
+                <a href="charaters.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895697.jpg?t=st=1699532244~exp=1699535844~hmac=4d6879eb634f413f56e205f16be6465565b77ecb0c5b577ac06953bee344ddae&w=1060" alt=""data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2100">
+                </a>
+            </div>
+            <div class="box">
+                <h2 class="text" data-aos="zoom-in-right" data-aos-duration="2400">Contact Us</h2>
+
+                <a href="contactus.html">
+                <img src="https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895699.jpg?t=st=1699524084~exp=1699527684~hmac=31cb4b4bffda2390fe9755f8df840fd54e201cc7a995f6e6be3560cf605421d1&w=1060" alt="" data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2400">
+                </a>
+            </div>
+
+        </div> <!-- main div end here -->
+    </div> <!-- for vedio div end here -->
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
